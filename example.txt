@@ -1,0 +1,56 @@
+rangefinderProgressBarColor1:c=255, 255, 255, 255
+rangefinderProgressBarColor2:c=0, 0, 0, 255
+rangefinderTextScale:r=1.0
+rangefinderVerticalOffset:r=1.6
+rangefinderHorizontalOffset:r=55
+fontSizeMult:r=0.35
+lineSizeMult:r=1.0
+drawCentralLineVert:b=no
+drawCentralLineHorz:b=no
+drawDistanceCorrection:b=yes
+distanceCorrectionPos:p2=-0.1, -0.05
+drawSightMask:b=yes
+crosshairDistHorSizeMain:p2=0, 0
+crosshairHorVertSize:p2=0.5, 0.5
+crosshairDistHorSizeAdditional:p2=0.007, 0.0025
+rangefinderUseThousandth:b=yes
+crosshair_hor_ranges{}
+crosshairColor:c = 0, 0, 0, 255
+crosshairLightColor:c = 220, 255, 0, 255
+
+// ballistic range indicators
+drawUpward:b = no
+distancePos:p2 = -0.0,0
+move:b = yes
+crosshairDistHorSizeMain:p2 = 0,0
+textPos:p2 = 0.010, 0
+textAlign:i = 1
+textShift:r = 0
+drawAdditionalLines:b = no
+crosshairDistHorSizeAdditional:p2 = 0.0,0.0
+drawDistanceCorrection:b = no
+
+crosshair_distances{
+distance { distance:p3=200,2,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=400,4,0.007; textPos:p2=-0.017,0; }
+distance { distance:p3=600,6,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=800,8,0.007; textPos:p2=-0.017,0; }
+distance { distance:p3=1000,10,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=1200,12,0.007; textPos:p2=-0.017,0; }
+distance { distance:p3=1400,14,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=1600,16,0.007; textPos:p2=-0.017,0; }
+distance { distance:p3=1800,18,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=2000,20,0.007; textPos:p2=-0.017,0; }
+distance { distance:p3=2200,22,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=2400,24,0.007; textPos:p2=-0.017,0; }
+distance { distance:p3=2600,26,-0.007; textPos:p2=0.017,0; }
+distance { distance:p3=2800,28,0.007; textPos:p2=-0.017,0; }
+}
+
+drawLines{
+line    //to 4000
+{
+line: p4 = 0.0, 31.88, 0, 0
+move: b = yes
+thousandth: b = yes
+}
